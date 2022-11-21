@@ -4,7 +4,7 @@ from vk_api import vk_api
 
 def request():
     users = []
-    Access_token = 'vk1.a.yKxxTovFfRF_K3RcLpZWBnO3N62ukrfVwgxAcebEakPJrUXReyvPDEX_z5lTNNwoUwKCPn98qWDGmvOawpialEJPDMQrIjQHE-2FDLqXBRZpRNzIrpCxP8fWpIV3zp26Uv5ncOPt4uwI_ANsItUcTGrnZ2ijCzbPDLL57LdzlNB_8mQ9nYR6dD1Dh90DQ0jZ'
+    Access_token = 'Access_token'
     group_id = 'voronezhnetip'
     offset = str(1000)
     link = 'https://api.vk.com/method/groups.getMembers?group_id=' + group_id + '&offset=' + offset + '&access_token=' + Access_token + '&v=5.131'
