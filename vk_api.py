@@ -14,6 +14,7 @@ def name_vk_user(id):
         json.dump(response, file, indent=3)
     with open('pars_group/json-file', 'r') as file:
         json_code = json.load(file)
+
     for element in json_code['response']:
         for keys in element:
             if keys == 'id' or keys == 'first_name' or keys == 'last_name':
