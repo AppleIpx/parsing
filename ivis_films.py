@@ -27,19 +27,19 @@ def all_films():
             try:
                 link = 'https://www.ivi.ru/' + film.find('a').get('href')
             except:
-                link = ''
+                continue
             try:
                 name = film.find('div', class_='nbl-slimPosterBlock__title').find('span').text
             except:
-                name = '-'
+                continue
             try:
                 genre = film.find('div', class_='nbl-poster__propertiesInfo').find('div').text
             except:
-                genre = '-'
+                continue
             try:
                 marks = film.find('div', class_='nbl-poster__propertiesRow').text
             except:
-                marks = '-'
+                continue
             data.append([link, name, genre, marks])
             count += 1
 
