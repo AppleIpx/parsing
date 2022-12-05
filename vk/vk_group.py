@@ -1,6 +1,6 @@
 from time import sleep
 import requests
-from vk_api import vk_api
+from vk.vk_api import vk_api
 
 def request():
     users = []
