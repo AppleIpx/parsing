@@ -4,7 +4,7 @@ from vk_for_bot import name_vk_user
 from telebot.types import Message
 import re
 
-bot = telebot.TeleBot('5605347048:AAFpwZfdflR_sJqfucCb2vpZb3IdSXo68q8')
+bot = telebot.TeleBot('token')
 
 def has_cyrillic(text):
     return bool(re.search('[а-яА-Я]', text))
